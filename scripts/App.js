@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Bold from './Bold';
+import Italic from './Italic';
 
 export default class App extends Component {
   render() {
@@ -8,6 +9,7 @@ export default class App extends Component {
       <div>
         <h1>Hello, World!</h1>
         <Bold>THIS IS NOW BOLD</Bold>
+        <Italic> THIS IS NOW ITALIC </Italic>
       </div>
     );
   }
