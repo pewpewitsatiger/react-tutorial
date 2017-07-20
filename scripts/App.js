@@ -10,8 +10,8 @@ export default class App extends Component {
       <div>
         <h1>Hello, World!</h1>
         <Bold>THIS IS NOW BOLD</Bold>
-        <Italic> THIS IS NOW ITALIC </Italic>
-        <ColorBlock> THIS IS DOING A THING </ColorBlock>
+        <Italic>THIS IS NOW ITALIC</Italic>
+        <ColorBlock>THIS IS DOING A THING</ColorBlock>
       </div>
     );
   }

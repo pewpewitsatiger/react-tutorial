@@ -14,7 +14,7 @@ export default class ColorBlock extends Component {
     };
 
     return (
-      <div style={{ style }}>
+      <div style={ style }>
         { this.props.children }
       </div>
     );
