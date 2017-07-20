@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Bold from './Bold';
 import Italic from './Italic';
 import ColorBlock from './ColorBlock';
+
 export default class App extends Component {
   render() {
     return (
