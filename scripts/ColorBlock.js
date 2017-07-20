@@ -3,15 +3,20 @@ import React, { Component } from 'react';
 export default class ColorBlock extends Component {
   render() {
     var color="red";
+
+    var style = {
+        width: "200px",
+        height: "200px",
+        backgroundColor: color,
+        textAlign: "center",
+        display: "table-cell",
+        verticalAlign: "middle"
+    };
+
     return (
-      <div style="
-            width: 200px;
-            height 200px;
-            background-color; {color};
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-            "> </div>
+      <div style={{style}}>
+        {this.props.children}
+      </div>
     );
   }
 }
