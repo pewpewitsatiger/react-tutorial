@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class ColorBlock extends Component {
   render() {
-    const color = 'red';
+    const color = 'blue';
 
     const style = {
       width: '200px',
@@ -23,4 +23,5 @@ export default class ColorBlock extends Component {
 
 ColorBlock.propTypes = {
   children: React.PropTypes.node
+  children: React.PropTypes.string
 };

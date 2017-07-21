@@ -11,7 +11,7 @@ export default class App extends Component {
         <h1>Hello, World!</h1>
         <Bold>THIS IS NOW BOLD</Bold>
         <Italic>THIS IS NOW ITALIC</Italic>
-        <ColorBlock>THIS IS DOING A THING</ColorBlock>
+        <ColorBlock color="blue">THIS IS DOING A THING</ColorBlock>
       </div>
     );
   }
