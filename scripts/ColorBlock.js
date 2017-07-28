@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 export default class ColorBlock extends Component {
   render() {
-    const color = 'blue';
+    const color = this.props.color === 'random' ?
+      '#' + Math.floor(Math.random() * 16777215).toString(16) :
+      this.props.color;
 
     const style = {
       width: '200px',
@@ -14,7 +16,7 @@ export default class ColorBlock extends Component {
     };
 
     return (
-      <div style={ style }>
+      <div style={style}>
         { this.props.children }
       </div>
     );
@@ -22,6 +24,6 @@ export default class ColorBlock extends Component {
 }
 
 ColorBlock.propTypes = {
+  color: React.PropTypes.string,
   children: React.PropTypes.node
-  children: React.PropTypes.string
 };
